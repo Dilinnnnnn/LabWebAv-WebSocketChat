@@ -1,0 +1,39 @@
+# ============================================
+# DEPENDENCIAS
+# El entregable pide excluir node_modules
+# ============================================
+node_modules/
+
+# ============================================
+# SECRETOS Y CREDENCIALES - NUNCA SUBIR
+# ============================================
+.env
+.env.*
+!.env.example
+
+# Clave privada del Firebase Admin SDK (contiene la private_key)
+firebase-service-account.json
+*service-account*.json
+*.pem
+*.key
+
+# ============================================
+# ARCHIVO MUERTO
+# Config Firebase del navegador: no se carga desde el HTML
+# y contiene el apiKey. Se excluye del repositorio.
+# ============================================
+public/firebase-config.js
+
+# ============================================
+# LOGS, TEMPORALES Y ARCHIVOS DEL SISTEMA
+# ============================================
+*.log
+npm-debug.log*
+*.tmp
+.DS_Store
+Thumbs.db
+
+# ============================================
+# DATOS LOCALES DEL ENTORNO DE TRABAJO
+# ============================================
+.workbuddy-ai/

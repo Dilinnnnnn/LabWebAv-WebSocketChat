@@ -1,0 +1,28 @@
+{
+  "name": "labwebav-websocketchat",
+  "version": "1.0.0",
+  "description": "Web Socket Server for Chat application",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "dev": "node --watch index.js",
+    "emulators": "firebase emulators:start --only auth,firestore"
+  },
+  "keywords": [
+    "websocket",
+    "chat",
+    "server"
+  ],
+  "author": "Dilan Real",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "dotenv": "^18.0.10",
+    "express": "^5.3.0",
+    "firebase-admin": "^14.5.1",
+    "jsonwebtoken": "^9.0.3",
+    "ws": "^8.22.2"
+  }
+}
